@@ -1,0 +1,13 @@
+<div class="form-check form-check-inline">
+   
+                <h6 class="form-check-input">Sort by :   </h6>
+
+        <input type="radio" class="form-check-input" value="Latest" (change)="onSelectionChanged()" [(ngModel)]="selectedValue"/>
+        <span>{{'Latest('+Latest+')'}}</span>
+
+        <input type="radio"  class="form-check-input"  value="Popularity" (change)="onSelectionChanged()" [(ngModel)]="selectedValue">
+        <span>{{'Popularity('+Popularity+')'}}</span>
+        <input type="radio"  class="form-check-input"  value="BestRating" (change)="onSelectionChanged()" [(ngModel)]="selectedValue">
+        <span>{{'BestRating('+BestRating+')'}}</span>
+    </div>
+
